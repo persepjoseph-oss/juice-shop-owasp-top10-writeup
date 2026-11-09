@@ -15,12 +15,13 @@ Entorno 100% local y legal — sin impacto a sistemas de terceros.
 
 1. Instalación de Docker en Kali:
    ```bash
-
+   sudo apt update && sudo apt install docker.io -y
+   sudo systemctl start docker
    ```
 
 2. Despliegue de Juice Shop en un contenedor local:
    ```bash
-  
+   sudo docker run -d -p 3000:3000 bkimminich/juice-shop
    ```
    La aplicación queda disponible en `http://localhost:3000`.
 
